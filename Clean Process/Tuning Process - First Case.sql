@@ -4,6 +4,8 @@
 		-- Duplicating Table affiliated_with
 		CREATE TABLE dup_affiliated_with
 		AS (SELECT * FROM affiliated_with);
+		-- Set Constraints
+		ALTER TABLE dup_affiliated_with
 		-- Create kolom dept_name
 		ALTER TABLE dup_affiliated_with
 		ADD COLUMN dept_name VARCHAR(30);
